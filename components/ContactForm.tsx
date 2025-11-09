@@ -32,18 +32,18 @@ const ContactForm = () => {
           <div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
             <LabelInputContainer>
               <Label htmlFor="firstname">Nombre</Label>
-              <Input id="firstname" placeholder="Tyler" type="text" />
+              <Input id="firstname" placeholder="John" type="text" />
             </LabelInputContainer>
           </div>
           <LabelInputContainer className="mb-4">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+            <Input id="email" placeholder="business@company.com" type="email" />
           </LabelInputContainer>
           <LabelInputContainer className="mb-8">
             <Label htmlFor="message">Mensaje</Label>
             <Textarea
               id="message"
-              placeholder="Me encantaría hablar de..."
+              placeholder="Me encantaría el servicio de..."
               rows={5}
             />
           </LabelInputContainer>

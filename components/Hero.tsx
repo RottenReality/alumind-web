@@ -6,23 +6,20 @@ import { motion } from "motion/react";
 const Hero = () => {
   return (
     <div className="relative w-full min-h-[64vh] flex flex-col items-center justify-center overflow-hidden">
-      {/* 🎥 Video de fondo */}
       <video
         className="absolute inset-0 h-full w-full object-cover"
-        src="/videos/hero-bg.mp4" // 👉 pon tu video en /public/videos/
+        src="/videos/hero-bg.mp4"
         autoPlay
         loop
         muted
         playsInline
-        poster="/images/hero-fallback.jpg" // 👉 imagen fallback en /public/images/
+        poster="/images/hero-fallback.jpg"
       />
 
-      {/* 🎨 Overlay con opacidad */}
       <div className="absolute inset-0 bg-[#085d92]/42" />
 
-      {/* ⭐ Contenido principal */}
       <div className="relative z-10 px-4 py-10 md:py-20">
-        <h1 className="mx-auto max-w-4xl text-center text-2xl font-bold text-primary md:text-4xl lg:text-7xl">
+        <h1 className="mx-auto max-w-4xl text-center text-4xl font-bold text-primary md:text-4xl lg:text-7xl sm:text-4xl">
           {"Líderes en Consultoría de Producción de Aluminio"
             .split(" ")
             .map((word, index) => (

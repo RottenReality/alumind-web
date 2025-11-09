@@ -1,24 +1,28 @@
 import React from 'react'
 import { Layers, Users, Wrench } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
+import Image from 'next/image';
 
 const services = [
   {
     icon: Layers,
     title: "Montaje de plantas y fabricación de aleaciones personalizadas",
     description: "Diseño y fabricación de aleaciones personalizadas en aluminio y cobre, adaptables a tus necesidades y que te ayudará a mejorar las condiciones de tu proyecto,",
+    imagePath: "/images/ingot.jpg",
     imagePlaceholder: "Custom Alloy Production Image",
   },
   {
     icon: Users,
     title: "Asesoría profesional en producción de aluminio",
     description: "Servicios de consultoría experta que brindan asesoramiento estratégico sobre procesos de producción de aluminio, control de calidad y eficiencia operativa. Décadas de experiencia en la industria a su servicio.",
+    imagePath: "/images/furnace.jpg",
     imagePlaceholder: "Consulting Services Image",
   },
   {
     icon: Wrench,
     title: "Venta autorizada de espectrometros Arun Technology",
     description: "Distribuidor autorizado de Arun Technology. Los espectrómetros de Arun son la opción ideal para la medición exacta en aleaciones.",
+    imagePath: "/images/ARTUS 8 .png",
     imagePlaceholder: "Custom Fabrication Image",
   }
 ];
@@ -40,14 +44,13 @@ const Services = () => {
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-strong transition-smooth border-border bg-card border-gray-200">
               <CardHeader>
-                {/* Image Placeholder */}
-                <div className="w-full h-48 bg-muted rounded-lg bg-gray-100 flex items-center justify-center mb-4 overflow-hidden">
-                  <div className="text-center p-6">
-                    <service.icon className="w-16 h-16 text-primary mx-auto mb-2" strokeWidth={1.5} />
-                    <span className="text-sm text-muted-foreground font-medium text-gray-500">
-                      {service.imagePlaceholder}
-                    </span>
-                  </div>
+                <div className="w-full h-48 bg-muted rounded-lg bg-gray-100 flex items-center justify-center mb-4 overflow-hidden relative">
+                  <Image
+                    src={service.imagePath}
+                    alt={service.imagePlaceholder}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <CardTitle className="text-2xl mb-2 group-hover:text-primary transition-smooth text-secondary">
                   {service.title}
