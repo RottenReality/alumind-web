@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 bg-[#085d92]/42" />
 
-      <div className="relative z-10 px-4 py-10 md:py-20">
+      <div className="relative z-10 px-4 py-10 md:py-20 mt-5">
         <h1 className="mx-auto max-w-4xl text-center text-4xl font-bold text-primary md:text-4xl lg:text-7xl sm:text-4xl">
           {"Líderes en Consultoría de Producción de Aluminio"
             .split(" ")
@@ -56,12 +56,16 @@ const Hero = () => {
           transition={{ duration: 0.3, delay: 1 }}
           className="mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-            Explorar Servicios
-          </button>
-          <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
-            Contáctanos
-          </button>
+          <a href="#services">
+            <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+              Explorar Servicios
+            </button>
+          </a>
+          <a href="#contact-form">
+            <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
+              Contáctanos
+            </button>
+          </a>
         </motion.div>
       </div>
     </div>

@@ -10,7 +10,6 @@ type Product = {
   title: string;
   description: string;
   image: string;
-  url: string;
 };
 
 interface ShowcaseSliderProps {
@@ -70,8 +69,8 @@ export default function ShowcaseSlider({ products }: ShowcaseSliderProps) {
                 <p className="text-gray-600">
                   {products[activeIndex].description}
                 </p>
-                <div className={`inline-block py-3 ${isEven ? "md:self-start self-center" : "md:self-end self-center"}`}>
-                  <a href={products[activeIndex].url}></a>
+                <a href="#contact-form">
+                  <div className={`inline-block py-3 ${isEven ? "md:self-start self-center" : "md:self-end self-center"}`}>
                   <HoverBorderGradient
                     containerClassName="rounded-full"
                     as="button"
@@ -80,6 +79,7 @@ export default function ShowcaseSlider({ products }: ShowcaseSliderProps) {
                     <span>Contactar</span>
                   </HoverBorderGradient>
                 </div>
+                </a>
               </div>
             </div>
           </motion.div>

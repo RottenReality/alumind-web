@@ -11,22 +11,22 @@ import Testimonials from "@/components/Testimonials";
 export default function Home() {
   return (
     <main className="relative bg-white flex justify-center items-center flex-col overflow-hidden mx-auto">
-      <div className="w-full">
+      <div id="main" className="w-full">
         <Hero />
       </div>
-      <div className=" w-full bg-gray-50">
+      <div id="services" className=" w-full bg-gray-50">
         <Services />
       </div>
-      <div className="max-w-3/4 w-full">
+      <div id="solutions" className="max-w-3/4 w-full">
         <Solutions />
       </div>
-      <div className=" w-full bg-gray-50">
+      <div id="spectrometers" className=" w-full bg-gray-50">
         <Spectrometers />
       </div>
-      <div className="w-full">
+      <div id="testimonials" className="w-full">
         <Testimonials />
       </div>
-      <div className=" w-full">
+      <div id="contact-form" className=" w-full">
         <ContactForm />
       </div>
     </main>

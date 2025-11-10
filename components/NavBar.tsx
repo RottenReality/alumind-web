@@ -14,18 +14,18 @@ import {
 
 const NavBar = () => {
   const navItems = [
-    { name: "Servicios", link: "#servicios" },
-    { name: "Espectrómetros", link: "#espectrómetros" },
-    { name: "Testimonios", link: "#testimonios" },
+    { name: "Servicios", link: "#services" },
+    { name: "Soluciones", link: "#solutions" },
+    { name: "Espectrómetros", link: "#spectrometers" },
+    { name: "Testimonios", link: "#testimonials" }
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Detectar scroll
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20); // puedes ajustar este valor
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -33,23 +33,21 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300  ${
         isScrolled
           ? "bg-transparent py-2"
           : "bg-transparent py-4"
       }`}
     >
       <Navbar>
-        {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary">Contactanos</NavbarButton>
+            <NavbarButton href="#contact-form" variant="primary">Contactanos</NavbarButton>
           </div>
         </NavBody>
 
-        {/* Mobile Navigation */}
         <MobileNav>
           <MobileNavHeader>
             <NavbarLogo />
