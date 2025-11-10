@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { Label } from "@/components/ui/Label";
 import { Input } from "@/components/ui/Input";
@@ -19,7 +21,6 @@ const ContactForm = () => {
       waveOpacity={0.25}
       blur={8}
       speed="slow"
-      id="contact-form"
     >
       <div className="shadow-input my-20 mx-auto w-auto md:w-2xl max-w-md rounded-2xl bg-white p-4 md:rounded-2xl md:p-8">
         <h2 className="text-xl font-bold text-neutral-800">

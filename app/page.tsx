@@ -1,5 +1,3 @@
-"use client"
-
 import ContactForm from "@/components/ContactForm";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -26,7 +24,7 @@ export default function Home() {
       <div id="testimonials" className="w-full">
         <Testimonials />
       </div>
-      <div id="contact-form" className=" w-full">
+      <div id="contact-form" className="w-full">
         <ContactForm />
       </div>
     </main>
