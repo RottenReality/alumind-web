@@ -1,17 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
-const NAV_LINKS = [
-  { name: 'Servicios', href: '#services' },
-  { name: 'Espectrometros', href: '#spectrometers' },
-  { name: 'Testimonios', href: '#testimonials' },
-  { name: 'Contacto', href: '#contact-form' },
-];
+import { useTranslations } from "next-intl";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
   const companyName = "Alumind";
+  const t = useTranslations("footer");
+
+  const NAV_LINKS = [
+    { name: t("services"), href: "#services" },
+    { name: t("about"), href: "#about" },
+    { name: t("spectrometers"), href: "#spectrometers" },
+    { name: t("testimonials"), href: "#testimonials" },
+    { name: t("contact"), href: '#contact-form' },
+  ];
 
   return (
     <footer className="bg-white shadow-sm dark:bg-gray-900 w-full">
@@ -51,7 +54,7 @@ export function Footer() {
           <Link href="/" className="hover:underline ml-1">
             {companyName}™
           </Link>
-          . Todos los derechos reservados.
+          . {t("description")}
         </span>
       </div>
     </footer>

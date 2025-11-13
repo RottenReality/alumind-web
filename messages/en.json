@@ -1,0 +1,102 @@
+{
+  "navbar": {
+    "services": "Services",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "spectrometers": "Spectrometers",
+    "testimonials": "Testimonials",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "title": "Leaders in Aluminum Production Consulting",
+    "subtitle": "Industry-leading expertise in custom alloy production, professional aluminum advice, and advanced spectrometer technology.",
+    "button1": "Explore Services",
+    "button2": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Comprehensive aluminum and copper solutions backed by industry expertise and cutting-edge technology.",
+    "catalog": {
+      "service1": {
+        "title": "Plant Assembly and Custom Alloy Manufacturing",
+        "description": "Design and manufacturing of custom aluminum and copper alloys, adaptable to your needs and helping you improve your project conditions."
+      },
+      "service2": {
+        "title": "Professional Consulting in Aluminum Production",
+        "description": "Expert consulting services providing strategic advice on aluminum production processes, quality control, and operational efficiency. Decades of industry experience at your service."
+      },
+      "service3": {
+        "title": "Authorized Sale of Arun Technology Spectrometers",
+        "description": "Authorized distributor of Arun Technology. Arun spectrometers are the ideal choice for accurate alloy measurement."
+      }
+    },
+    "button": "Contact"
+  },
+  "about": {
+    "title": "Aluminum and Copper:",
+    "subtitle": "the future of the energy transition",
+    "description": "At Alumind, we believe in aluminum and copper as key elements for innovation in metallurgy and metalworking. With more than 25 years of experience, we transform these materials into unique solutions that drive engineering projects worldwide.",
+    "bullets": {
+      "bullet1": "Certified Experience",
+      "bullet2": "High-Precision Processes",
+      "bullet3": "Sustainability in Every Project",
+      "bullet4": "Innovation in Advanced Metallurgy"
+    }
+  },
+  "spectrometers": {
+    "title": "Spectrometers",
+    "catalog": {
+      "spec1": {
+        "title": "CALIBUS",
+        "description": "The CALIBUS is our Laser-Induced Breakdown Spectrometer (LIBS). It is the first Complementary Metal-Oxide Semiconductor (CMOS)-based LIBS analyzer on the market capable of measuring carbon in ferrous materials. The new CALIBUS is an ideal analytical solution for Quality Assurance/Quality Control (QA/QC), metallurgical manufacturing and machining, petrochemical industries, and the scrap and recycling sector."
+      },
+      "spec2": {
+        "title": "MERLIN 4",
+        "description": "The MERLIN 4 is a midrange Complementary Metal-Oxide Semiconductor (CMOS)-based spectrometer, available as both a dedicated single-base unit and a versatile multi-base system. It is perfectly suited for the metal production and inspection industries, contract analysis laboratories, and the marine industry, also being ideal for metal processing."
+      },
+      "spec3": {
+        "title": "ARTUS 8 (OES)",
+        "description": "The ARTUS 8 meets the requirement of providing fast, precise, and accurate analysis for a perfect melt. It is one of the most powerful and reliable spectrometers, offering a complete range of analytical programs, including cast irons, carbon and nitrogen in steels, and all alloying elements and their traces needed for treatment. It offers all the advantages of a flexible and versatile Complementary Metal-Oxide Semiconductor (CMOS) spectrometer. It even competes in certain applications with classic Photo Multiplier Tube systems, which are still the benchmark in high-end Optical Emission Spectrometry (OES)."
+      },
+      "spec4": {
+        "title": "ARTUS 10 (OES)",
+        "description": "The ARTUS 10 includes a scientific-grade CMOS sensor that reduces analysis time for some metals to as little as 10 seconds. Furthermore, its smart algorithms eliminate background interference, allowing for optimal analytical performance. Among the features of the ARTUS are also included: a dual optical system; a flowing gas channel design; a cast aluminum encapsulated light chamber; tool-less access to the UV and visible optical lenses; and a latch-type electrode locking device."
+      }
+    },
+    "button": "Contact"
+  },
+  "testimonials": {
+    "title": "Happy Clients",
+    "description": "We drive the future with",
+    "words": {
+      "word1": "innovation",
+      "word2": "commitment",
+      "word3": "development",
+      "word4": "sustainability"
+    },
+    "testimonialsList": {
+      "testimonial1": {
+        "text": "",
+        "person": ""
+      }
+    }
+  },
+  "contactForm": {
+    "title": "Contact",
+    "description": "Have a project or need advice? Contact us!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "messagePlaceholder": "I'd love to know more about...",
+    "button": "Send"
+  },
+  "footer": {
+    "services": "Services",
+    "solutions": "Solutions",
+    "about": "About Us",
+    "spectrometers": "Spectrometers",
+    "testimonials": "Testimonials",
+    "contact": "Contact Us",
+    "description": "All rights reserved."
+  }
+}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { useTranslations } from "next-intl";
 
 type Product = {
   title: string;
@@ -17,6 +18,7 @@ interface ShowcaseSliderProps {
 }
 
 export default function ShowcaseSlider({ products }: ShowcaseSliderProps) {
+  const t = useTranslations("spectrometers");
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextSlide = () =>
@@ -76,7 +78,7 @@ export default function ShowcaseSlider({ products }: ShowcaseSliderProps) {
                     as="button"
                     className="bg-white text-black"
                   >
-                    <span>Contactar</span>
+                    <span>{}{t("button")}</span>
                   </HoverBorderGradient>
                 </div>
                 </a>

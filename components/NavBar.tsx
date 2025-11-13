@@ -11,13 +11,16 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/Resizable-navbar";
+import { useTranslations } from "next-intl";
 
 const NavBar = () => {
+  const t = useTranslations("navbar");
+
   const navItems = [
-    { name: "Servicios", link: "#services" },
-    { name: "Soluciones", link: "#solutions" },
-    { name: "Espectrómetros", link: "#spectrometers" },
-    { name: "Testimonios", link: "#testimonials" }
+    { name: t("services"), link: "#services" },
+    { name: t("about"), link: "#about" },
+    { name: t("spectrometers"), link: "#spectrometers" },
+    { name: t("testimonials"), link: "#testimonials" }
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,7 +47,7 @@ const NavBar = () => {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton href="#contact-form" variant="primary">Contactanos</NavbarButton>
+            <NavbarButton href="#contact-form" variant="primary">{t("contact")}</NavbarButton>
           </div>
         </NavBody>
 
@@ -77,7 +80,7 @@ const NavBar = () => {
                 variant="primary"
                 className="w-full"
               >
-                Book a call
+                {t("contact")}
               </NavbarButton>
             </div>
           </MobileNavMenu>

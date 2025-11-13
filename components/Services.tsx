@@ -2,41 +2,44 @@ import React from 'react'
 import { Layers, Users, Wrench } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
 import Image from 'next/image';
+import { useTranslations } from "next-intl";
 
-const services = [
+const Services = () => {
+  const t = useTranslations("services");
+
+  const services = [
   {
     icon: Layers,
-    title: "Montaje de plantas y fabricación de aleaciones personalizadas",
-    description: "Diseño y fabricación de aleaciones personalizadas en aluminio y cobre, adaptables a tus necesidades y que te ayudará a mejorar las condiciones de tu proyecto,",
+    title: t("catalog.service1.title"),
+    description: t("catalog.service1.description"),
     imagePath: "/images/ingot.jpg",
     imagePlaceholder: "Custom Alloy Production Image",
   },
   {
     icon: Users,
-    title: "Asesoría profesional en producción de aluminio",
-    description: "Servicios de consultoría experta que brindan asesoramiento estratégico sobre procesos de producción de aluminio, control de calidad y eficiencia operativa. Décadas de experiencia en la industria a su servicio.",
+    title: t("catalog.service2.title"),
+    description: t("catalog.service2.description"),
     imagePath: "/images/furnace.jpg",
     imagePlaceholder: "Consulting Services Image",
   },
   {
     icon: Wrench,
-    title: "Venta autorizada de espectrometros Arun Technology",
-    description: "Distribuidor autorizado de Arun Technology. Los espectrómetros de Arun son la opción ideal para la medición exacta en aleaciones.",
+    title: t("catalog.service3.title"),
+    description: t("catalog.service3.description"),
     imagePath: "/images/ARTUS 8 .png",
     imagePlaceholder: "Custom Fabrication Image",
   }
 ];
 
-const Services = () => {
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-secondary">
-            Nuestros servicios
+            {t("title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-gray-600">
-            Soluciones integrales de aluminio y cobre respaldadas por la experiencia en la industria y tecnología de vanguardia.
+            {t("description")}
           </p>
         </div>
 

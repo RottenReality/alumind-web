@@ -1,0 +1,102 @@
+{
+  "navbar": {
+    "services": "Servicios",
+    "solutions": "Soluciones",
+    "about": "Nosotros",
+    "spectrometers": "Espectrómetros",
+    "testimonials": "Testimonios",
+    "contact": "Contactanos"
+  },
+  "hero": {
+    "title": "Líderes en Consultoría de Producción de Aluminio",
+    "subtitle": "Experiencia líder en la industria en producción de aleaciones a medida, asesoramiento profesional en aluminio y tecnología avanzada de espectrómetros.",
+    "button1": "Explorar Servicios",
+    "button2": "Contactanos"
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "description": "Soluciones integrales de aluminio y cobre respaldadas por la experiencia en la industria y tecnología de vanguardia.",
+    "catalog": {
+        "service1":{
+            "title": "Montaje de plantas y fabricación de aleaciones personalizadas",
+            "description":"Diseño y fabricación de aleaciones personalizadas en aluminio y cobre, adaptables a tus necesidades y que te ayudará a mejorar las condiciones de tu proyecto."
+        },
+        "service2":{
+            "title": "Asesoría profesional en producción de aluminio",
+            "description":"Servicios de consultoría experta que brindan asesoramiento estratégico sobre procesos de producción de aluminio, control de calidad y eficiencia operativa. Décadas de experiencia en la industria a su servicio."
+        },
+        "service3":{
+            "title": "Venta autorizada de espectrometros Arun Technology",
+            "description":"Distribuidor autorizado de Arun Technology. Los espectrómetros de Arun son la opción ideal para la medición exacta en aleaciones."
+        }
+    },
+    "button": "Contactar"
+  },
+  "about": {
+    "title": "Aluminio y cobre:",
+    "subtitle": "el futuro de la transición energética",
+    "description": "En Alumind creemos en el aluminio y el cobre como elementos clave para la innovación en la metalurgia y la metalmecánica. Con más de 25 años de experiencia, convertimos estos materiales en soluciones únicas que impulsan proyectos de ingeniería en todo el mundo.",
+    "bullets":{
+      "bullet1":"Experiencia certificada",
+      "bullet2":"Procesos de alta precisión",
+      "bullet3":"Sostenibilidad en cada proyecto",
+      "bullet4":"Innovación en metalurgia avanzada"
+    }
+  },
+  "spectrometers": {
+    "title": "Espectrómetros",
+    "catalog": {
+        "spec1":{
+            "title": "CALIBUS",
+            "description":"El CALIBUS es nuestro espectrómetro de ruptura inducida por láser (LIBS, por sus siglas en inglés). Es el primer analizador LIBS basado en semiconductor complementario de óxido metálico (CMOS) del mercado capaz de medir carbono en materiales ferrosos El nuevo CALIBUS es una solución analítica ideal para control de calidad (QA/QC), fabricación y mecanizado metalúrgico, las industrias petroquímicas, y el sector de chatarra y reciclaje."
+        },
+        "spec2":{
+            "title": "MERLIN 4",
+            "description":"El MERLIN 4 es un espectrómetro de rango medio basado en semiconductor complementario de óxido metálico (CMOS), disponible tanto como una unidad de base única dedicada como en un versátil sistema multibase. Está perfectamente adaptado para las industrias de producción e inspección de metales, laboratorios de análisis por contrato y la industria naval, siendo también ideal para el procesamiento de metales."
+        },
+        "spec3":{
+            "title": "ARTUS 8 (OES)",
+            "description":"El ARTUS 8 cumple con el requisito de proporcionar análisis rápidos, precisos y exactos para una fusión perfecta. Es uno de los espectrómetros más potentes y fiables, ofreciendo una gama completa de programas analíticos, incluyendo hierros fundidos, aceros con carbono y nitrógeno, y todos los elementos de aleación y sus trazas necesarios para el tratamiento. Ofrece todas las ventajas de un espectrómetro de semiconductor complementario de óxido metálico (CMOS) flexible y versátil. Incluso compite en ciertas aplicaciones con los sistemas clásicos de tubo fotomultiplicador, que siguen siendo la referencia en la espectrometría de emisión óptica (OES) de alta gama."
+        },
+        "spec4":{
+            "title": "ARTUS 10 (OES)",
+            "description":"El ARTUS 10 incluye un sensor CMOS de grado científico que permite reducir el tiempo de análisis para algunos metales a tan solo 10 segundos. Además, sus algoritmos inteligentes eliminan la interferencia de fondo, lo que permite un rendimiento analítico óptimo. Entre las características del ARTUS, también se incluyen: un sistema óptico dual; un diseño fluido del canal de gas; una cámara de luz encapsulada en aluminio fundido a presión; acceso sin herramientas a las lentes ópticas UV y visibles; y un dispositivo de bloqueo de electrodos de tipo cierre."
+        }
+    },
+    "button": "Contactar"
+  },
+  "testimonials": {
+    "title": "Clientes felices",
+    "description": "Impulsamos el futuro con",
+    "words":{
+      "word1":"innovación",
+      "word2":"compromiso",
+      "word3":"desarrollo",
+      "word4":"sostenibilidad"
+    },
+    "testimonialsList":{
+      "testimonial1": {
+        "text":"",
+        "person":""
+      }
+    }
+  },
+  "contactForm": {
+    "title": "Contacto",
+    "description": "¿Tienes un proyecto o necesitas asesoría? ¡Contáctanos!",
+    "name":"Nombre",
+    "email":"Email",
+    "message":"Mensaje",
+    "messagePlaceholder":"Me encantaría saber más sobre...",
+    "button":"Enviar"
+  },
+  "footer": {
+    "services": "Servicios",
+    "solutions": "Soluciones",
+    "about": "Nosotros",
+    "spectrometers": "Espectrómetros",
+    "testimonials": "Testimonios",
+    "contact": "Contactanos",
+    "description": "Todos los derechos reservados."
+  }
+}

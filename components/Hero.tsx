@@ -2,8 +2,10 @@
 
 import React from "react";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("hero");
   return (
     <div className="relative w-full min-h-[64vh] flex flex-col items-center justify-center overflow-hidden">
       <video
@@ -20,7 +22,7 @@ const Hero = () => {
 
       <div className="relative z-10 px-4 py-10 md:py-20 mt-5">
         <h1 className="mx-auto max-w-4xl text-center text-4xl font-bold text-primary md:text-4xl lg:text-7xl sm:text-4xl">
-          {"Líderes en Consultoría de Producción de Aluminio"
+          {t("title")
             .split(" ")
             .map((word, index) => (
               <motion.span
@@ -45,9 +47,7 @@ const Hero = () => {
           transition={{ duration: 0.3, delay: 0.8 }}
           className="mx-auto max-w-xl py-4 text-center text-lg font-normal text-[#D0D5D9]"
         >
-          Experiencia líder en la industria en producción de aleaciones a medida,
-          asesoramiento profesional en aluminio y tecnología avanzada de
-          espectrómetros.
+          {t("subtitle")}
         </motion.p>
 
         <motion.div
@@ -58,12 +58,12 @@ const Hero = () => {
         >
           <a href="#services">
             <button className="w-60 transform rounded-lg bg-black px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-              Explorar Servicios
+              {t("button1")}
             </button>
           </a>
           <a href="#contact-form">
             <button className="w-60 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
-              Contáctanos
+              {t("button2")}
             </button>
           </a>
         </motion.div>
