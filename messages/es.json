@@ -76,8 +76,9 @@
     },
     "testimonialsList":{
       "testimonial1": {
-        "text":"",
-        "person":""
+        "text":"La experiencia de poder trabajar con ustedes nos ha traído beneficios en la compañía; el acompañamiento y el servicio que prestan es de primer nivel, como lo hemos podido evidenciar en los resultados obtenidos. Nos complace el haber encontrado en su empresa no solo un prestador de servicios, sino un aliado estratégico que nos puede ayudar en nuestros planes a futuro.  ",
+        "name":"EXAL S.A",
+        "company": ""
       }
     }
   },

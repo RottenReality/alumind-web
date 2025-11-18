@@ -12,6 +12,7 @@ import {
   MobileNavMenu,
 } from "@/components/ui/Resizable-navbar";
 import { useTranslations } from "next-intl";
+import LanguageSwitch from "./ui/LanguageSwitch";
 
 const NavBar = () => {
   const t = useTranslations("navbar");
@@ -36,7 +37,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300  ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 pl-6${
         isScrolled
           ? "bg-transparent py-2"
           : "bg-transparent py-4"
@@ -46,7 +47,8 @@ const NavBar = () => {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
+            <LanguageSwitch/>
             <NavbarButton href="#contact-form" variant="primary">{t("contact")}</NavbarButton>
           </div>
         </NavBody>
@@ -83,6 +85,7 @@ const NavBar = () => {
                 {t("contact")}
               </NavbarButton>
             </div>
+            <LanguageSwitch/>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>

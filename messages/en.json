@@ -76,8 +76,9 @@
     },
     "testimonialsList": {
       "testimonial1": {
-        "text": "",
-        "person": ""
+        "text": "Working with your team has brought clear benefits to our company. The first-rate support and service you provide is evident in the excellent results we've achieved. We are pleased to have found a true strategic partner in your company, not just a service provider, to help us execute our future plans.",
+        "name": "EXAL S.A",
+        "company": ""
       }
     }
   },
