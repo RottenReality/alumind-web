@@ -1,4 +1,3 @@
-import {useTranslations} from 'next-intl';
 import ContactForm from "@/components/ContactForm";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -7,7 +6,6 @@ import Spectrometers from "@/components/Spectrometers";
 import Testimonials from "@/components/Testimonials";
 
 export default function HomePage() {
-  const t = useTranslations('home');
 
   return (
     <main className="relative bg-white flex justify-center items-center flex-col overflow-hidden mx-auto">
