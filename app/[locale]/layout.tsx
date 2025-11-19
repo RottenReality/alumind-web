@@ -94,6 +94,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <meta name="apple-mobile-web-app-title" content="Alumind" />
         <meta name="theme-color" content="#085d92" />
         <meta name="msapplication-TileColor" content="#085d92" />
+        <link rel="preload" as="image" href="/images/hero-fallback.avif" type="image/avif" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
