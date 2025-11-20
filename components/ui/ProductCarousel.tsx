@@ -40,12 +40,10 @@ export default function ShowcaseSlider({ products }: ShowcaseSliderProps) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -100 }}
             transition={{ duration: 0.6 }}
-            // aquí alternamos el orden en desktop; en mobile siempre columna
             className={`flex flex-col md:flex-row items-center md:items-center gap-8 md:gap-12 ${
               isEven ? "md:flex-row" : "md:flex-row-reverse"
             }`}
           >
-            {/* Imagen (columna) */}
             <div className="md:w-1/2 w-full flex justify-center items-center">
               <div className="relative w-full max-w-[520px] h-64 md:h-[420px]">
                 <Image
@@ -57,8 +55,6 @@ export default function ShowcaseSlider({ products }: ShowcaseSliderProps) {
               </div>
             </div>
 
-            {/* Texto (columna) */}
-            {/* El wrapper interior limita el ancho y se empuja hacia el centro con ml-auto / mr-auto */}
             <div className="md:w-1/2 w-full flex items-center">
               <div
                 className={`max-w-xl flex flex-col gap-4 ${
@@ -87,7 +83,6 @@ export default function ShowcaseSlider({ products }: ShowcaseSliderProps) {
           </motion.div>
         </AnimatePresence>
 
-        {/* Controles: los movemos un poco hacia fuera para no tapar contenido */}
         <button
           onClick={prevSlide}
           aria-label="Anterior"
@@ -105,7 +100,6 @@ export default function ShowcaseSlider({ products }: ShowcaseSliderProps) {
         </button>
       </div>
 
-      {/* Dots */}
       <div className="flex space-x-2 mt-6 justify-center">
         {products.map((_, i) => (
           <button

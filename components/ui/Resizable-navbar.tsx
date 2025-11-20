@@ -7,9 +7,9 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
+import Image from "next/image";
 
 import React, { useRef, useState } from "react";
-
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -210,6 +210,17 @@ export const MobileNavMenu = ({
             className,
           )}
         >
+          {/* Close button on top-right of the mobile menu */}
+          <div className="w-full flex justify-end">
+            <button
+              aria-label="Close menu"
+              onClick={onClose}
+              className="p-1 rounded-md text-neutral-700 hover:bg-gray-100"
+            >
+              <IconX />
+            </button>
+          </div>
+
           {children}
         </motion.div>
       )}
@@ -237,38 +248,38 @@ export const NavbarLogo = () => {
       href="#main"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <img
+      <Image
         src="/images/logo.png"
         alt="logo"
         width={30}
         height={30}
+        priority
       />
       <span className="font-medium text-black dark:text-white">Alumind</span>
     </a>
   );
 };
 
-export const NavbarButton = ({
-  href,
-  as: Tag = "a",
+export const NavbarButton = <
+  C extends React.ElementType = "a"
+>({
+  as,
   children,
   className,
   variant = "primary",
-  ...props
+  ...rest
 }: {
-  href?: string;
-  as?: React.ElementType;
+  as?: C;
   children: React.ReactNode;
   className?: string;
   variant?: "primary" | "secondary" | "dark" | "gradient";
-} & (
-  | React.ComponentPropsWithoutRef<"a">
-  | React.ComponentPropsWithoutRef<"button">
-)) => {
+} & Omit<React.ComponentPropsWithoutRef<C>, "children" | "className">) => {
+  const Tag = (as || "a") as React.ElementType;
+
   const baseStyles =
     "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
-  const variantStyles = {
+  const variantStyles: Record<string, string> = {
     primary:
       "shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
     secondary: "bg-transparent shadow-none dark:text-white",
@@ -277,13 +288,13 @@ export const NavbarButton = ({
       "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
   };
 
-  return (
-    <Tag
-      href={href || undefined}
-      className={cn(baseStyles, variantStyles[variant], className)}
-      {...props}
-    >
-      {children}
-    </Tag>
-  );
+  const spreadProps = rest as Omit<React.ComponentPropsWithoutRef<C>, "children" | "className">;
+
+  const propsForElement: Record<string, unknown> = {
+    className: cn(baseStyles, variantStyles[variant], className),
+    ...spreadProps,
+  };
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return React.createElement(Tag as any, propsForElement as any, children);
 };

@@ -7,6 +7,8 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import "./globals.css";
 
+type LocaleParams = { locale: string } | Promise<{ locale: string }>;
+
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
@@ -25,10 +27,10 @@ const BUSINESS_ADDRESS = {
 
 type Props = {
   children: React.ReactNode;
-  params: any;
+  params: LocaleParams;
 };
 
-export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: LocaleParams }): Promise<Metadata> {
   const { locale } = await params;
   const isEs = locale?.toLowerCase().startsWith("es");
 

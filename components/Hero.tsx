@@ -1,12 +1,53 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const t = useTranslations("hero");
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const imgWrapRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const imgWrap = imgWrapRef.current;
+
+    if (!video || !imgWrap) return;
+
+    video.style.opacity = video.style.opacity || "1";
+    video.style.pointerEvents = video.style.pointerEvents || "auto";
+    imgWrap.style.opacity = imgWrap.style.opacity || "0";
+    imgWrap.style.pointerEvents = imgWrap.style.pointerEvents || "none";
+
+    const showFallback = () => {
+      try {
+        video.style.transition = "opacity 250ms ease";
+        imgWrap.style.transition = "opacity 250ms ease";
+      } catch {
+      }
+      video.style.opacity = "0";
+      video.style.pointerEvents = "none";
+      imgWrap.style.opacity = "1";
+      imgWrap.style.pointerEvents = "auto";
+    };
+
+    const playPromise = video.play();
+
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        showFallback();
+      });
+    }
+
+    const onError = () => showFallback();
+    video.addEventListener("error", onError);
+
+    return () => {
+      video.removeEventListener("error", onError);
+    };
+  }, []);
 
   return (
     <section
@@ -15,28 +56,37 @@ const Hero = () => {
       style={{ WebkitFontSmoothing: "antialiased" }}
     >
       <div className="absolute inset-0">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          poster="/images/hero-fallback.avif"
-          preload="metadata"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src="/videos/hero-bg.webm" type="video/webm; codecs=vp9" />
-          <source src="/videos/hero-bg.mp4" type="video/mp4; codecs=h264" />
-        </video>
+        <div className="absolute inset-0">
+          <video
+            ref={videoRef}
+            id="hero-video"
+            className="absolute inset-0 h-full w-full object-cover transition-opacity duration-300"
+            poster="/images/hero-fallback.avif"
+            preload="metadata"
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-hidden="true"
+          >
+            <source src="/videos/hero-bg.webm" type="video/webm; codecs=vp9" />
+            <source src="/videos/hero-bg.mp4" type="video/mp4; codecs=h264" />
+          </video>
 
-        <div className="absolute inset-0 block lg:hidden">
-          <Image
-            src="/images/hero-fallback.avif"
-            alt="Hero - Alumind"
-            fill
-            sizes="100vw"
-            style={{ objectFit: "cover" }}
-            priority
-          />
+          <div
+            ref={imgWrapRef}
+            className="absolute inset-0 opacity-0 pointer-events-none transition-opacity duration-300"
+            aria-hidden="true"
+          >
+            <Image
+              src="/images/hero-fallback.avif"
+              alt="Hero - Alumind"
+              fill
+              sizes="100vw"
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </div>
         </div>
       </div>
 
