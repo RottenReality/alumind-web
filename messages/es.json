@@ -115,7 +115,10 @@
     "email":"Email",
     "message":"Mensaje",
     "messagePlaceholder":"Me encantaría saber más sobre...",
-    "button":"Enviar"
+    "button":"Enviar",
+    "sending": "Enviando...",
+    "successMessage": "¡Mensaje enviado exitosamente! Te responderemos pronto.",
+    "errorMessage": "Error al enviar el mensaje. Por favor intenta de nuevo."
   },
   "footer": {
     "services": "Servicios",

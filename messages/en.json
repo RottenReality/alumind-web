@@ -115,7 +115,10 @@
     "email": "Email",
     "message": "Message",
     "messagePlaceholder": "I'd love to know more about...",
-    "button": "Send"
+    "button": "Send",
+    "sending": "Sending...",
+    "successMessage": "Message sent successfully! We'll get back to you soon.",
+    "errorMessage": "Failed to send message. Please try again."
   },
   "footer": {
     "services": "Services",
