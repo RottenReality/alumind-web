@@ -35,7 +35,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="relative w-full bg-white py-20">
+    <section className="relative w-full bg-white py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-6">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -71,7 +71,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative h-[400px] md:h-[500px] lg:h-[600px]"
+          className="relative h-[400px] md:h-[500px] lg:h-[600px] -mx-4 md:mx-0"
         >
           {inView ? <World data={sampleArcs} globeConfig={globeConfig} /> : <div className="h-full w-full bg-gray-100" />}
         </motion.div>

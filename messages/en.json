@@ -13,6 +13,20 @@
     "button1": "Explore Services",
     "button2": "Contact Us"
   },
+  "arunPartnership": {
+    "title": "Global Technical Excellence in ",
+    "subtitle": "Spectrometry Solutions",
+    "description": "As authorized distributors of Arun Technology, we bring world-class spectrometry expertise to industries worldwide. Our partnership combines cutting-edge technology with comprehensive technical support, maintenance, and repair services across all continents.",
+    "badges": {
+      "badge1": "Authorized Arun Technology Distributor",
+      "badge2": "Worldwide Sales & Technical Support",
+      "badge3": "On-Site Maintenance & Repair Services",
+      "badge4": "25+ Years Metallurgical Expertise",
+      "badge5": "International Standards Compliance"
+    },
+    "button1": "Explore Spectrometers",
+    "button2": "Contact Our Team"
+  },
   "services": {
     "title": "Our Services",
     "description": "Comprehensive aluminum and copper solutions backed by industry expertise and cutting-edge technology.",
@@ -30,7 +44,10 @@
         "description": "Authorized distributor of Arun Technology. Arun spectrometers are the ideal choice for accurate alloy measurement."
       }
     },
-    "button": "Contact"
+    "button": "Contact",
+    "learnMore": "Learn More",
+    "readyMessage": "Ready to elevate your metallurgical projects?",
+    "ctaButton": "Get Started Today"
   },
   "about": {
     "title": "Aluminum and Copper:",
@@ -80,7 +97,16 @@
         "name": "EXAL S.A",
         "company": ""
       }
-    }
+    },
+    "metrics": {
+      "experience": "Years of Experience",
+      "projects": "Successful Projects",
+      "clients": "Satisfied Clients"
+    },
+    "trustBadge": "Verified Client",
+    "trustMessage": "TRUSTED BY INDUSTRY LEADERS",
+    "joinMessage": "Join our growing list of satisfied clients",
+    "ctaButton": "Start Your Project"
   },
   "contactForm": {
     "title": "Contact",

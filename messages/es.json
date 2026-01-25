@@ -13,6 +13,20 @@
     "button1": "Explorar Servicios",
     "button2": "Contactanos"
   },
+  "arunPartnership": {
+    "title": "Excelencia Técnica Global en ",
+    "subtitle": "Soluciones de Espectrometría",
+    "description": "Como distribuidores autorizados de Arun Technology, brindamos experiencia de clase mundial en espectrometría a industrias en todo el mundo. Nuestra asociación combina tecnología de vanguardia con soporte técnico integral, mantenimiento y servicios de reparación en todos los continentes.",
+    "badges": {
+      "badge1": "Distribuidor Autorizado Arun Technology",
+      "badge2": "Ventas y Soporte Técnico Mundial",
+      "badge3": "Servicios de Mantenimiento y Reparación In Situ",
+      "badge4": "Más de 25 Años de Experiencia Metalúrgica",
+      "badge5": "Cumplimiento de Estándares Internacionales"
+    },
+    "button1": "Explorar Espectrómetros",
+    "button2": "Contactar a Nuestro Equipo"
+  },
   "services": {
     "title": "Nuestros servicios",
     "description": "Soluciones integrales de aluminio y cobre respaldadas por la experiencia en la industria y tecnología de vanguardia.",
@@ -30,7 +44,10 @@
             "description":"Distribuidor autorizado de Arun Technology. Los espectrómetros de Arun son la opción ideal para la medición exacta en aleaciones."
         }
     },
-    "button": "Contactar"
+    "button": "Contactar",
+    "learnMore": "Conoce Más",
+    "readyMessage": "¿Listo para elevar tus proyectos metalúrgicos?",
+    "ctaButton": "Comienza Hoy"
   },
   "about": {
     "title": "Aluminio y cobre:",
@@ -80,7 +97,16 @@
         "name":"EXAL S.A",
         "company": ""
       }
-    }
+    },
+    "metrics": {
+      "experience": "Años de Experiencia",
+      "projects": "Proyectos Exitosos",
+      "clients": "Clientes Satisfechos"
+    },
+    "trustBadge": "Cliente Verificado",
+    "trustMessage": "CONFIANZA DE LÍDERES DE LA INDUSTRIA",
+    "joinMessage": "Únete a nuestra creciente lista de clientes satisfechos",
+    "ctaButton": "Inicia Tu Proyecto"
   },
   "contactForm": {
     "title": "Contacto",
