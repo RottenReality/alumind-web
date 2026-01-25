@@ -57,7 +57,7 @@ const Testimonials = () => {
             {t("title")}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t("description")} <span className="font-semibold text-[#085d92]">{t("words.word1")}</span>, <span className="font-semibold text-[#085d92]">{t("words.word2")}</span>, and <span className="font-semibold text-[#085d92]">{t("words.word3")}</span>
+            {t("description")} <span className="font-semibold text-[#085d92]">{t("words.word1")}</span>, <span className="font-semibold text-[#085d92]">{t("words.word2")}</span> {t("words.word4")} <span className="font-semibold text-[#085d92]">{t("words.word3")}</span>
           </p>
         </motion.div>
 
@@ -119,7 +119,7 @@ const Testimonials = () => {
                   <div className="font-bold text-xl text-gray-900">
                     {t("testimonialsList.testimonial1.name")}
                   </div>
-                  <div className="text-gray-600">Strategic Partner</div>
+                  <div className="text-gray-600">{t("testimonialsList.testimonial1.role")}</div>
                 </div>
 
                 {/* Verified Badge */}

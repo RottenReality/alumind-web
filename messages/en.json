@@ -16,10 +16,10 @@
   "arunPartnership": {
     "title": "Global Technical Excellence in ",
     "subtitle": "Spectrometry Solutions",
-    "description": "As authorized distributors of Arun Technology, we bring world-class spectrometry expertise to industries worldwide. Our partnership combines cutting-edge technology with comprehensive technical support, maintenance, and repair services across all continents.",
+    "description": "As authorized distributors of Arun Technology, we bring world-class spectrometry expertise to industries throughout the Americas. Our partnership combines cutting-edge technology with comprehensive technical support, maintenance, and repair services across the entire American continent.",
     "badges": {
       "badge1": "Authorized Arun Technology Distributor",
-      "badge2": "Worldwide Sales & Technical Support",
+      "badge2": "Sales & Technical Support across the Americas",
       "badge3": "On-Site Maintenance & Repair Services",
       "badge4": "25+ Years Metallurgical Expertise",
       "badge5": "International Standards Compliance"
@@ -44,15 +44,14 @@
         "description": "Authorized distributor of Arun Technology. Arun spectrometers are the ideal choice for accurate alloy measurement."
       }
     },
-    "button": "Contact",
-    "learnMore": "Learn More",
+    "learnMore": "Contact Us",
     "readyMessage": "Ready to elevate your metallurgical projects?",
     "ctaButton": "Get Started Today"
   },
   "about": {
     "title": "Aluminum and Copper:",
     "subtitle": "the future of the energy transition",
-    "description": "At Alumind, we believe in aluminum and copper as key elements for innovation in metallurgy and metalworking. With more than 25 years of experience, we transform these materials into unique solutions that drive engineering projects worldwide.",
+    "description": "At Alumind, we believe in aluminum and copper as key elements for innovation in metallurgy and metalworking. With more than 25 years of experience, we transform these materials into unique solutions that drive engineering projects throughout the Americas.",
     "bullets": {
       "bullet1": "Certified Experience",
       "bullet2": "High-Precision Processes",
@@ -89,13 +88,13 @@
       "word1": "innovation",
       "word2": "commitment",
       "word3": "development",
-      "word4": "sustainability"
+      "word4": "and"
     },
     "testimonialsList": {
       "testimonial1": {
         "text": "Working with your team has brought clear benefits to our company. The first-rate support and service you provide is evident in the excellent results we've achieved. We are pleased to have found a true strategic partner in your company, not just a service provider, to help us execute our future plans.",
         "name": "EXAL S.A",
-        "company": ""
+        "role": "Strategic Partner"
       }
     },
     "metrics": {

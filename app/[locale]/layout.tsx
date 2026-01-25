@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 const SITE_TITLE_ES = "Alumind — Expertos en aluminio y cobre | Espectrómetros Arun";
 const SITE_TITLE_EN = "Alumind — Aluminum and Copper Experts | Arun Spectrometers";
-const SITE_DESCRIPTION_ES = "Líderes en consultoría de producción de aluminio, diseño de aleaciones personalizadas y distribuidores autorizados de espectrómetros Arun Technology. Más de 25 años de experiencia metalúrgica. Servicio mundial.";
-const SITE_DESCRIPTION_EN = "Leaders in aluminum production consulting, custom alloy design, and authorized Arun Technology spectrometer distributors. 25+ years of metallurgical expertise. Worldwide service.";
+const SITE_DESCRIPTION_ES = "Líderes en consultoría de producción de aluminio, diseño de aleaciones personalizadas y distribuidores autorizados de espectrómetros Arun Technology. Más de 25 años de experiencia metalúrgica. Servicio en las Américas.";
+const SITE_DESCRIPTION_EN = "Leaders in aluminum production consulting, custom alloy design, and authorized Arun Technology spectrometer distributors. 25+ years of metallurgical expertise. Service throughout the Americas.";
 const SITE_URL = "https://alumind.co";
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 const BUSINESS_PHONE = "+57 313 671 0605";
@@ -201,7 +201,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       telephone: BUSINESS_PHONE,
       contactType: "customer service",
       availableLanguage: ["English", "Spanish"],
-      areaServed: "Worldwide"
+      areaServed: ["North America", "Central America", "South America"]
     }
   };
 
@@ -229,10 +229,20 @@ export default async function LocaleLayout({ children, params }: Props) {
       latitude: "6.1726",
       longitude: "-75.5943"
     },
-    areaServed: {
-      "@type": "Place",
-      name: "Worldwide"
-    },
+    areaServed: [
+      {
+        "@type": "Place",
+        name: "North America"
+      },
+      {
+        "@type": "Place",
+        name: "Central America"
+      },
+      {
+        "@type": "Place",
+        name: "South America"
+      }
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: isEs ? "Servicios de Alumind" : "Alumind Services",
