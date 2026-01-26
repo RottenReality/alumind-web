@@ -101,9 +101,6 @@ export default function MaintenanceMode() {
           className="text-center border-t border-white/20 pt-6"
         >
           <p className="text-white font-bold text-lg mb-1">Alumind Technology</p>
-          <p className="text-gray-400 text-sm">
-            Leaders in Aluminum Production Consulting & Arun Spectrometers
-          </p>
         </motion.div>
 
         {/* Loading animation */}
