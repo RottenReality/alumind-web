@@ -5,8 +5,16 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import Spectrometers from "@/components/Spectrometers";
 import Testimonials from "@/components/Testimonials";
+import MaintenanceMode from "@/components/MaintenanceMode";
 
 export default function HomePage() {
+  // Check if maintenance mode is enabled
+  const isMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true';
+
+  // Show maintenance page if enabled
+  if (isMaintenanceMode) {
+    return <MaintenanceMode />;
+  }
 
   return (
     <main className="relative bg-white flex justify-center items-center flex-col mx-auto">
