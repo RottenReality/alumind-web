@@ -33,6 +33,14 @@ const Services = () => {
       imagePlaceholder: "Spectrometer Technology",
       gradient: "from-cyan-600 to-teal-600",
       accentColor: "#0891b2"
+    },
+    {
+      title: t("catalog.service4.title"),
+      description: t("catalog.service4.description"),
+      imagePath: "/images/copper_ingot.jpeg",
+      imagePlaceholder: "Copper and Copper Alloy Sales",
+      gradient: "from-orange-600 to-amber-600",
+      accentColor: "#c2410c"
     }
   ];
 
@@ -64,7 +72,7 @@ const Services = () => {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}

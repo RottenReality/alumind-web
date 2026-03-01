@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 const SITE_TITLE_ES = "Alumind — Expertos en aluminio y cobre | Espectrómetros Arun";
 const SITE_TITLE_EN = "Alumind — Aluminum and Copper Experts | Arun Spectrometers";
-const SITE_DESCRIPTION_ES = "Líderes en consultoría de producción de aluminio, diseño de aleaciones personalizadas y distribuidores autorizados de espectrómetros Arun Technology. Más de 25 años de experiencia metalúrgica. Servicio en las Américas.";
-const SITE_DESCRIPTION_EN = "Leaders in aluminum production consulting, custom alloy design, and authorized Arun Technology spectrometer distributors. 25+ years of metallurgical expertise. Service throughout the Americas.";
+const SITE_DESCRIPTION_ES = "Líderes en consultoría de producción de aluminio, venta de cobre y aleaciones de cobre, diseño de aleaciones personalizadas y distribuidores autorizados de espectrómetros Arun Technology. Más de 25 años de experiencia metalúrgica. Servicio en las Américas.";
+const SITE_DESCRIPTION_EN = "Leaders in aluminum production consulting, copper and copper alloy sales, custom alloy design, and authorized Arun Technology spectrometer distributors. 25+ years of metallurgical expertise. Service throughout the Americas.";
 const SITE_URL = "https://alumind.co";
 const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 const BUSINESS_PHONE = "+57 313 671 0605";
@@ -49,7 +49,12 @@ const KEYWORDS_EN = [
   "spectrometer maintenance",
   "ARTUS spectrometer",
   "CALIBUS spectrometer",
-  "MERLIN spectrometer"
+  "MERLIN spectrometer",
+  "copper sales",
+  "copper alloy sales",
+  "electrolytic copper 99.99",
+  "bronze and brass supply",
+  "copper ingot supplier"
 ];
 
 const KEYWORDS_ES = [
@@ -73,7 +78,12 @@ const KEYWORDS_ES = [
   "mantenimiento espectrómetros",
   "espectrómetro ARTUS",
   "espectrómetro CALIBUS",
-  "espectrómetro MERLIN"
+  "espectrómetro MERLIN",
+  "venta de cobre",
+  "venta aleaciones de cobre",
+  "cobre electrolítico 99.99",
+  "bronces y latones",
+  "proveedor lingotes de cobre"
 ];
 
 type Props = {
@@ -273,6 +283,14 @@ export default async function LocaleLayout({ children, params }: Props) {
               "@type": "Brand",
               name: "Arun Technology"
             }
+          }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Product",
+            name: isEs ? "Venta de Cobre y Aleaciones de Cobre" : "Copper and Copper Alloy Sales",
+            description: isEs ? "Comercialización de cobre electrolítico 99.99% de pureza, bronces, latones y aleaciones especiales" : "Supply of 99.99% purity electrolytic copper, bronzes, brasses, and specialty alloys"
           }
         }
       ]

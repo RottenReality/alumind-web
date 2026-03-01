@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: "Alumind Contact Form <onboarding@resend.dev>",
-      to: [process.env.CONTACT_RECEIVER_EMAIL || ""], // Your Gmail address
+      to: [process.env.CONTACT_RECEIVER_EMAIL || "", process.env.CONTACT_RECEIVER_EMAIL2 || ""].filter(Boolean),
       replyTo: email, // This allows you to reply directly to the sender
       subject: `[ALUMIND CONTACT] New inquiry from ${name}`,
       headers: {

@@ -8,7 +8,7 @@
     "contact": "Contáctanos"
   },
   "hero": {
-    "title": "Líderes en Consultoría de Producción de Aluminio",
+    "title": "Líderes en Consultoría de metales no ferrosos",
     "subtitle": "Experiencia líder en la industria en producción de aleaciones a medida, asesoramiento profesional en aluminio y tecnología avanzada de espectrómetros.",
     "button1": "Explorar Servicios",
     "button2": "Contáctanos"
@@ -36,12 +36,16 @@
             "description":"Diseño y fabricación de aleaciones personalizadas en aluminio y cobre, adaptables a tus necesidades y que te ayudarán a mejorar las condiciones de tu proyecto."
         },
         "service2":{
-            "title": "Asesoría profesional en producción de aluminio",
-            "description":"Servicios de consultoría y asesoramiento estratégico sobre los procesos de producción de aluminio, control de calidad y eficiencia operativa. Décadas de experiencia en la industria a su servicio."
+            "title": "Asesoría profesional en producción de cobre y aluminio",
+            "description":"Servicios de consultoría y asesoramiento estratégico sobre los procesos de producción de cobre y aluminio, control de calidad y eficiencia operativa. Décadas de experiencia en la industria a su servicio."
         },
         "service3":{
             "title": "Venta autorizada de espectrómetros Arun Technology",
             "description":"Distribuidor autorizado de Arun Technology. Los espectrómetros de Arun son la opción ideal para la medición exacta de aleaciones."
+        },
+        "service4":{
+            "title": "Venta de cobre y aleaciones de cobre",
+            "description":"Comercialización de cobre electrolítico 99.99% de pureza, bronces, latones y aleaciones especiales. Suministro confiable de materias primas de alta calidad para la industria metalúrgica y metalmecánica."
         }
     },
     "learnMore": "Contáctanos",

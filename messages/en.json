@@ -8,7 +8,7 @@
     "contact": "Contact Us"
   },
   "hero": {
-    "title": "Leaders in Aluminum Production Consulting",
+    "title": "Leaders in Non-Ferrous Metal Consulting",
     "subtitle": "Industry-leading expertise in custom alloy production, professional aluminum advice, and advanced spectrometer technology.",
     "button1": "Explore Services",
     "button2": "Contact Us"
@@ -36,12 +36,16 @@
         "description": "Design and manufacturing of custom aluminum and copper alloys, adaptable to your needs and helping you improve your project conditions."
       },
       "service2": {
-        "title": "Professional Consulting in Aluminum Production",
-        "description": "Expert consulting services providing strategic advice on aluminum production processes, quality control, and operational efficiency. Decades of industry experience at your service."
+        "title": "Professional Consulting in Copper and Aluminum Production",
+        "description": "Expert consulting services providing strategic advice on copper and aluminum production processes, quality control, and operational efficiency. Decades of industry experience at your service."
       },
       "service3": {
         "title": "Authorized Sale of Arun Technology Spectrometers",
         "description": "Authorized distributor of Arun Technology. Arun spectrometers are the ideal choice for accurate alloy measurement."
+      },
+      "service4": {
+        "title": "Copper and Copper Alloy Sales",
+        "description": "Supply of 99.99% purity electrolytic copper, bronzes, brasses, and specialty alloys. Reliable sourcing of premium-grade raw materials for the metallurgical and metalworking industries."
       }
     },
     "learnMore": "Contact Us",
